@@ -172,9 +172,6 @@ table {
 
 }
 
-
-
-
 /* #endregion */
 
 /* #region main content */
@@ -374,8 +371,8 @@ table {
 
     }
 
-    .Home-icon-image{
-    }
+    /* .Home-icon-image{
+    } */
 
     .hamburger_icon{
         display: none;
