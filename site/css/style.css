@@ -55,10 +55,7 @@ table {
 /*-------- Phone Size ------*/
 /* #region Navbar css */
 
-/* .container{
-    display:flex;
-    flex-direction: column;
-} */
+
 
 .nav-bar{
     position: fixed;
@@ -85,6 +82,7 @@ table {
 }
 
 .nav-logos{
+    height:75px;
     width: 100%;
     display:flex;
     justify-content: space-between;
@@ -96,13 +94,14 @@ table {
 }
 
 .nav-text.open{
+    padding:0;
     background-color: gray;
     font-weight: bolder;
     font-size: 2.2rem;
     display:flex;
-    height:97vh;
-    width: 100vw;
     z-index: 11;
+    height:100vh;
+    width:100vw;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -164,6 +163,7 @@ table {
 } */
 
 #hero_video{
+    margin-top: 75px;
     position: relative;
     display: inline;
     width:100%;
@@ -239,8 +239,8 @@ table {
 }
 
 #resume_header{
-    font-size: 3rem;
-    padding:100px 0 3% 0;
+    font-size: 2.2rem;
+    padding:85px 0 0 0;
 }
 
 .resume_section_header{
@@ -250,7 +250,7 @@ table {
 }
 
 #resume_contact{
-    padding:3% 0;
+    padding:30px 0;
 }
 
 #resume_about{
@@ -285,20 +285,6 @@ table {
     margin-top: 15px;
     list-style:inside;
 }
-
-.resume-nav-bar{
-    position: fixed;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    list-style: none;
-    background-color: lightgray;
-    z-index: 10;
-    width:100%;
-    height:5%;
-    margin-bottom: 20px;
-}
-
 
 /* #endregion */
 
@@ -371,6 +357,20 @@ table {
 
     }
 
+    .nav-text.open{
+        background-color: gray;
+        font-weight: bolder;
+        font-size: 2.2rem;
+        display:flex;
+        height:100vh;
+        width: 100vw;
+        z-index: 11;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        line-height: 450%;
+    }
+
     /* .Home-icon-image{
     } */
 
@@ -405,6 +405,10 @@ table {
         width:50%;
     }
 
+    #resume_header{
+        font-size: 3rem;
+        padding:50px 0 0 0;
+    }
 
 }
 
