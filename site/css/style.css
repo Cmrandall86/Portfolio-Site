@@ -1,0 +1,429 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@300&display=swap');
+
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap"); 
+
+/* #region css reset */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font-family: 'Catamaran', sans-serif;;
+	vertical-align: baseline;
+    box-sizing: border-box;
+
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* #endregion */
+
+/*-------- Phone Size ------*/
+/* #region Navbar css */
+
+/* .container{
+    display:flex;
+    flex-direction: column;
+} */
+
+.nav-bar{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    background-color: lightgray;
+    z-index: 10;
+    width:100%;
+    height:75px;
+    opacity: 80%;
+}
+
+.nav_spacer{
+    height: 7%;
+}
+.nav-bar.open{
+    display:block;
+}
+
+.nav-bar.closed{
+    opacity: 100%;
+}
+
+.nav-logos{
+    width: 100%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-text{
+    display:none;
+}
+
+.nav-text.open{
+    background-color: gray;
+    font-weight: bolder;
+    font-size: 2.2rem;
+    display:flex;
+    height:97vh;
+    width: 100vw;
+    z-index: 11;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    line-height: 450%;
+}
+
+/* .main-content{
+    display:flex;
+    flex-direction: column;
+} */
+
+.nav-text a{
+    text-decoration: none;
+}
+
+.nav-text a:hover{
+    color:red;
+}
+
+.Home-icon{
+    margin: 10px;
+}
+
+.Home-icon-image {
+    width: 180px;
+}
+
+.main-content h1{
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+.hamburger{
+    margin:5%;
+    height:40px;
+    width: 40px;
+    cursor:pointer;
+}
+
+.hamburger.closed{
+    display:none;
+}
+
+.closer{
+    display:none;
+}
+
+.closer.open{
+    height:40px;
+    width: 40px;
+    cursor:pointer;
+    display:block;
+}
+
+/* .hero{
+    Ask jenkins - trying to stack nav on top of video to start
+    display:flex;
+    flex-direction: column;
+} */
+
+#hero_video{
+    position: relative;
+    display: inline;
+    width:100%;
+    height:100%;
+    z-index: 1;
+
+}
+
+
+
+
+/* #endregion */
+
+/* #region main content */
+
+.main-content{
+    font-family: 'Oswald', sans-serif;;
+    padding:20px;
+    display:flex;
+    flex-direction: column;
+    z-index: 1;
+}
+
+.main-content h1{
+
+    /* text-shadow: 2px 2px 3px black; */
+
+    font-family: 'Oswald', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:2%;
+    font-size: 4rem;
+
+}
+
+.main-content p {
+    display: flex;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.3rem;
+    line-height: 1.6em;
+    text-align: center;
+
+}
+
+.picture_of_me{
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+    align-items: center;
+    background-image: url("./images/me.jpg");
+    height:200px;
+    width: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 180px;
+    /* border: 1px solid black; */
+    box-shadow: 3px 3px 3px 3px gray;
+}
+
+.picture_wrapper{
+    display:flex;
+    justify-content: center;
+}
+
+/* #endregion */
+
+/* #region Resume */
+
+.resume{
+    display:flex;
+    flex-direction: column;
+    line-height: 1.5rem;
+    padding:5%;
+}
+
+#resume_header{
+    font-size: 3rem;
+    padding:100px 0 3% 0;
+}
+
+.resume_section_header{
+    font-size: 2.5rem;
+    padding: 20px 0;
+    color:lightgray
+}
+
+#resume_contact{
+    padding:3% 0;
+}
+
+#resume_about{
+    width:96%;
+    
+}
+.basic_section_hr{
+    width:96%;
+    margin:0;
+}
+
+.resume_hr {
+    margin:10px 0;
+    border: 0;
+    clear:both;
+    display:block;
+    width: 96%;               
+    background-color:gray;
+    height: 3px;
+  }
+
+.section_header{
+    font-size: 1.5rem;
+    margin: 30px 0 10px 0;
+}
+
+.skill_time{
+    color:gray;
+}
+
+.skills{
+    margin-top: 15px;
+    list-style:inside;
+}
+
+.resume-nav-bar{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    background-color: lightgray;
+    z-index: 10;
+    width:100%;
+    height:5%;
+    margin-bottom: 20px;
+}
+
+
+/* #endregion */
+
+/* #region Footer */
+
+.main_footer{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding:20px;
+    margin-top: 20px;
+    width:100%;
+}
+
+.main_footer p{
+    display: flex;
+    justify-content: center;
+}
+.social_media_icons{
+    display: flex;
+    justify-content: space-between;
+    width:100%;
+    margin-bottom: 20px;
+}
+
+.social_media_icons li img{
+    height:40px;
+    width:40px;
+}
+/* #endregion */
+
+/* #region web-page-size */
+
+/* Web-Page Size */
+
+@media(min-width:830px) {
+    .nav-bar{
+        margin-left: 20%;
+        position: fixed;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        list-style: none;
+        background-color: lightgray;
+        z-index: 10;
+        width:60%;
+        opacity: 80%;
+    }
+    
+    hr{
+        
+        width:50%;
+    }
+
+    .main-content{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #hero_video{
+        margin-top: 75px;
+        margin-left: 20%;
+        position: relative;
+        display: inline;
+        width:60%;
+        height:60%;
+        z-index: 1;
+
+    }
+
+    .Home-icon-image{
+    }
+
+    .hamburger_icon{
+        display: none;
+    }
+
+    .nav-text{
+        display:flex;
+        justify-content: space-around;
+        margin-right:15px;
+        
+    } 
+
+    .nav-text li{
+        padding:20px;
+    }
+
+    .about{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .main-content p{
+
+        width:50%;
+    }
+
+    .social_media_icons{
+        width:50%;
+    }
+
+
+}
+
+/* #endregion */
+
+/* #region About Me */
+
+/* .about_me{
+    display:flex;
+    flex-direction: column;
+    line-height: 1.5rem;
+    padding:5%;
+}
+
+.about_me{
+    height:30px;
+} */
+
+/* #endregion */
