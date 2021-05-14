@@ -331,7 +331,7 @@ table {
 
 /* Web-Page Size */
 
-@media(min-width:830px) {
+@media(min-width:956px) {
     .nav-bar{
         margin-left: 20%;
         position: fixed;
@@ -356,7 +356,7 @@ table {
     }
 
     .Home-icon-image {
-        width: 380px;
+        width: 250px;
     }
 
     .main-content{
