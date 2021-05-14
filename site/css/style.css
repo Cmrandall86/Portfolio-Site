@@ -55,8 +55,6 @@ table {
 /*-------- Phone Size ------*/
 /* #region Navbar css */
 
-
-
 .nav-bar{
     position: fixed;
     display: flex;
@@ -236,12 +234,12 @@ table {
     padding:5%;
 }
 
-#resume_header{
+.page_header{
     font-size: 2.2rem;
     padding:100px 0 0 0;
 }
 
-.resume_section_header{
+.page_section_header{
     font-size: 2.5rem;
     padding: 20px 0;
     color:lightgray
@@ -270,7 +268,7 @@ table {
     height: 3px;
   }
 
-.section_header{
+.experience_header{
     font-size: 1.5rem;
     margin: 30px 0 10px 0;
 }
@@ -423,15 +421,12 @@ table {
 
 /* #region About Me */
 
-/* .about_me{
+.about_me{
     display:flex;
     flex-direction: column;
     line-height: 1.5rem;
     padding:5%;
 }
 
-.about_me{
-    height:30px;
-} */
 
 /* #endregion */
