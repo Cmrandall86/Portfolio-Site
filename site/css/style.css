@@ -161,6 +161,7 @@ table {
 } */
 
 #hero_video{
+    margin-top: 75px;
     position: relative;
     display: inline;
     width:100%;
