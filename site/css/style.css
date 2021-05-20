@@ -90,12 +90,16 @@ table {
     display:none;
 }
 
+.nav_hide.on{
+    display:none;
+}
+
 .nav-text.open{
     background-color: gray;
     font-weight: bolder;
     font-size: 2.2rem;
     display:flex;
-    height:150vh;
+    height:100vh;
     width: 100vw;
     z-index: 11;
     /* justify-content: flex-start; */
@@ -267,7 +271,9 @@ table {
 
 .skills{
     margin-top: 15px;
-    list-style:inside;
+    margin-left: 17px;
+    list-style-type: disc;
+    list-style-position: outside;
 }
 
 .nav-bar{
