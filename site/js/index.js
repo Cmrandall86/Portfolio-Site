@@ -3,6 +3,7 @@ let nav_text = document.querySelector('.nav-text');
 let nav_bar = document.querySelector('.nav-bar');
 let closer = document.querySelector('.closer');
 let nav_helper = document.querySelector('.nav_hide')
+let card_expander = document.querySelectorAll('.card')
 
 
 hamburger_icon.addEventListener('click', ()=>{
@@ -23,4 +24,12 @@ closer.addEventListener('click' ,()=>{
     nav_helper.classList.toggle('on')
 
 })
+
+card_expander.addEventListener('click', ()=>{
+    card_expander.forEach((card)=>{
+        console.log(card)
+
+    })
+})
+
 
