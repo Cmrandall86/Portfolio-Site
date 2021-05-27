@@ -25,10 +25,11 @@ closer.addEventListener('click' ,()=>{
 
 })
 
-card_expander.addEventListener('click', ()=>{
-    card_expander.forEach((card)=>{
-        console.log(card)
 
+
+card_expander.forEach((card)=>{
+    card.addEventListener('click', () => {
+        console.log(card)
     })
 })
 

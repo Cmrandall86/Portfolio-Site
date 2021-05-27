@@ -84,6 +84,7 @@ table {
     display:flex;
     justify-content: space-between;
     align-items: center;
+    height: 75px;
 }
 
 .nav-text{
@@ -107,6 +108,7 @@ table {
     line-height: 50px;
 }
 
+
 .nav_hr{
     margin:10px 0;
     border: 0;
@@ -120,6 +122,7 @@ table {
 .nav-text.open li{
     background: lightgray;
     padding:20px;
+    /* width: 150px; */
 }
 
 .nav-text a{
@@ -255,7 +258,7 @@ table {
 }
 
 #resume_about{
-    width:96%;
+    max-width:96%;
     
 }
 .basic_section_hr{
@@ -338,7 +341,6 @@ table {
 .card_container{
     height: 80vh;
     width: 90vw;
-    background-color: blue;
     display:flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -365,7 +367,7 @@ table {
 .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
   }
-}
+
 
 .card.touched{
     height:90%;
@@ -378,6 +380,10 @@ table {
     padding:5%;
 }
 
+.page_header.about{
+    margin-top: none;
+}
+
 
 /* #endregion */
 
@@ -387,7 +393,7 @@ table {
 
 @media(min-width:956px) {
     .nav-bar{
-        margin-left: 20%;
+        margin-left: 15%;
         position: fixed;
         display: flex;
         align-items: center;
@@ -395,7 +401,7 @@ table {
         list-style: none;
         background-color: lightgray;
         z-index: 10;
-        width:60%;
+        width:70%;
         opacity: 80%;
     }
 
@@ -437,11 +443,11 @@ table {
 
     #hero_video{
         margin-top: 75px;
-        margin-left: 20%;
+        margin-left: 15%;
         position: relative;
         display: inline;
-        width:60%;
-        height:60%;
+        width:70%;
+        height:70%;
         z-index: 1;
     }
 
@@ -470,11 +476,11 @@ table {
     }
 
     .main-content p{
-        width:50%;
+        width:60%;
     }
 
     .social_media_icons{
-        width:50%;
+        width:60%;
     }
 
     .social_media_icons li img{
@@ -521,9 +527,8 @@ table {
 
 /* #endregion */
 
-
-
 /* #region icon float animation */
+
 
 .hvr-float-shadow {
     display: inline-block;
@@ -568,3 +573,4 @@ table {
   }
 
   /* #endregion */
+
